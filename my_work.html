@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal</title>
+
+    <style>
+        body {
+            background-color: whitesmoke;   /* neutral light background */
+            color: black;
+            margin: 0;
+        }
+
+        header {
+            background-color: gray;         /* neutral dark header */
+            color: white;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        section {
+            background-color: white;        /* clean form area */
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .box {
+            background-color: gainsboro;    /* neutral box color */
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        button {
+            background-color: gray;         /* neutral button */
+            color: white;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Please fill all the details carefully</p>
+    </header>
+
+    <section>
+        <form>
+
+            <div class="box">
+                <h3>Personal Details</h3>
+                Full Name:
+                <input type="text"><br><br>
+
+                Date of Birth:
+                <input type="date"><br><br>
+
+                Email:
+                <input type="email"><br><br>
+
+                Phone Number:
+                <input type="text"><br><br>
+            </div>
+
+            <div class="box">
+                <h3>Job Details</h3>
+
+                Role You Are Looking For:
+                <input type="text"><br><br>
+
+                Are you a Fresher or Experienced?<br>
+                <input type="radio" name="status"> Fresher<br>
+                <input type="radio" name="status"> Experienced<br><br>
+
+                If Experienced, Years of Experience:
+                <input type="text"><br><br>
+            </div>
+
+            <div class="box">
+                <h3>Education Details</h3>
+
+                Highest Qualification:
+                <input type="text"><br><br>
+
+                College / University:
+                <input type="text"><br><br>
+
+                Year of Graduation:
+                <input type="text"><br><br>
+            </div>
+
+            <div class="box">
+                <h3>Skills</h3>
+
+                Primary Skill:
+                <input type="text"><br><br>
+
+                Secondary Skill:
+                <input type="text"><br><br>
+            </div>
+
+            <div class="box">
+                <h3>Work Experience</h3>
+
+                Previous Company Name:
+                <input type="text"><br><br>
+
+                Describe Your Experience:<br>
+                <textarea rows="4" cols="40"></textarea><br><br>
+            </div>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
