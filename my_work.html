@@ -4,83 +4,53 @@
     <title>Job Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Job Application Form</h1>
-        <p>Please fill all the details carefully</p>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">JobPortal</div>
+        <ul class="nav-links">
+            <li>Jobs</li>
+            <li>Companies</li>
+            <li>Services</li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </nav>
 
-    <section>
-        <form>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Find your dream job now</h1>
+        <p>Explore thousands of opportunities</p>
 
-            <div class="box">
-                <h3>Personal Details</h3>
-                Full Name:
-                <input type="text">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search jobs...">
+            <button>Search</button>
+        </div>
+    </section>
 
-                Date of Birth:
-                <input type="date">
-
-                Email:
-                <input type="email">
-
-                Phone Number:
-                <input type="text">
-            </div>
-
-            <div class="box">
-                <h3>Job Details</h3>
-
-                Role You Are Looking For:
-                <input type="text">
-
-                Are you a Fresher or Experienced?<br><br>
-                <input type="radio" name="status"> Fresher<br>
-                <input type="radio" name="status"> Experienced<br><br>
-
-                If Experienced, Years of Experience:
-                <input type="text">
-            </div>
-
-            <div class="box">
-                <h3>Education Details</h3>
-
-                Highest Qualification:
-                <input type="text">
-
-                College / University:
-                <input type="text">
-
-                Year of Graduation:
-                <input type="text">
-            </div>
-
-            <div class="box">
-                <h3>Skills</h3>
-
-                Primary Skill:
-                <input type="text">
-
-                Secondary Skill:
-                <input type="text">
-            </div>
-
-            <div class="box">
-                <h3>Work Experience</h3>
-
-                Previous Company Name:
-                <input type="text">
-
-                Describe Your Experience:
-                <textarea rows="4"></textarea>
-            </div>
-
-            <button type="submit">Submit Application</button>
-
+    <!-- Post Job Form -->
+    <section class="form-section">
+        <h2>Post a Job</h2>
+        <form id="jobForm">
+            <input type="text" id="jobTitle" placeholder="Job Title" required>
+            <input type="text" id="companyName" placeholder="Company Name" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <textarea id="description" placeholder="Job Description" required></textarea>
+            <button type="submit">Add Job</button>
         </form>
     </section>
 
+    <!-- Job Cards -->
+    <section class="jobs-section">
+        <h2>Available Jobs</h2>
+        <div id="jobList" class="job-grid">
+            <p id="emptyMessage" class="empty-msg">No jobs posted yet 🚀</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
